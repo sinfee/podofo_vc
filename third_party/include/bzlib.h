@@ -78,7 +78,7 @@ typedef
 #   define BZ_API(func) func
 #   if defined(BZ_BUILD_DLL)
 #      define BZ_EXTERN __declspec(dllexport)
-#   elif 0
+#   elif defined(BZ_IMPORT)
 #      define BZ_EXTERN __declspec(dllimport)
 #   else
 #      define BZ_EXTERN
